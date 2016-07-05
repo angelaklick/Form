@@ -1,0 +1,118 @@
+<doctype!>
+
+<head>
+
+<link href = "formstyle.css" rel = "stylesheet">
+
+<title> Form </title>
+
+
+</head>
+
+<body>
+
+<div id = "wrapper">
+
+<img src="pretty.jpg" alt="design" style="width:80%"; height="auto"; class = "right" /><br><br>
+
+<div class = "clear">
+
+
+<form = "demo_form.asp" autocomplete = "on">
+
+<fieldset>
+
+<legend> All about YOU: </legend>
+
+First name:
+<input type = "text" name = "firstname">
+
+Last name:
+<input type = "text" name = "lastname"><br><br>
+
+E-mail:
+<input type = "text" name = "email">
+
+Phone Number:
+<input type = "tel" name = "phone number"><br><br>
+
+Password:
+<input type = "password" name = "password" autocomplete = "off"><br><br>
+ 
+</fieldset><br><br>
+
+
+</div>
+
+<div id = "center">
+
+When is your birthday?:
+<input type="date" name="bday"><br><br>
+
+
+Where would you prefer to travel?<br>
+<input type = "radio" name = "travel" value = "beach" id = "beach">
+<label for = "beach"> Beach </label><br>
+<input type = "radio" name = "travel" value = "mountains" id = "mountains">
+<label for = "mountains"> Mountains </label><br>
+<input type = "radio" name = "travel" value = "other" id = "other">
+<label for = "other"> Other </label><br><br>
+
+How often do you watch television? <br>
+never <input type = "range" min = "0" max = "10" step = "2" value = "4"> always <br><br>
+
+Which food do you prefer? <br><br>
+<select name = "food" multiple>
+<option value = "steak"> Steak </option>
+<option value = "chicken"> Chicken </option>
+<option value = "pizza"> Pizza </option>
+<option value = "pasta"> Pasta </option>
+<option value = "salad"> Salad </option>
+<option value = "candy"> Candy </option>
+</select><br><br>
+  
+
+
+What is your favorite color?<br>
+<input type = "Color"> <br><br>
+
+Which animal do you prefer?<br>
+<input type = "checkbox" name = "animal" value = "Cat" id = "cat" checked >
+<label for = "cat"> Cat </label><br>
+<input type = "checkbox" name = "animal" value = "Dog" id = "dog">
+<label for = "dog"> Dog </label><br>
+<input type = "checkbox" name = "animal" value = "Owl" id = "owl">
+<label for = "owl"> Owl </label><br><br>
+
+On a scale from 1-10, how satisfied are you with your internet provider?<br>
+<input type = "number" min = "1" max = "10" step = "1" value = "5"><br><br>
+
+Who is your provider?
+<input list = "provider" name = "provider">
+<datalist id="provider">
+<option value = "Comcast">
+<option value = "WOW">
+<option value = "Bright House">
+<option value = "Other">
+</datalist><br><br><br><br>
+
+<textarea name="message" rows="5" cols="40" wrap = "hard">
+Tell us more about yourself.
+</textarea><br><br>
+
+
+<button type = "submit" value = "Submit"> Submit </button>
+<button type = "reset" value = "Reset"> Reset </button>
+
+<br><br><br>
+
+
+</form>
+
+
+
+</div>
+
+</div>
+
+</body>
